@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="coins">"crypto-monnaie "</string>
+    <string name="top100">Top 100</string>
+    <string name="market">Marché</string>
+    <string name="news">Actualités</string>
+    <string name="sort_by">"Trier par "</string>
+    <string name="coin_name">Nom</string>
+    <string name="add_coin">Ajouter crypto-monnaie</string>
+    <string name="price">Prix</string>
+    <string name="price_changed_24h">Prix 24h</string>
+    <string name="add_coin_from_hint">Ajouter nom crypto-monnaie</string>
+    <string name="matches_found">" correspondances trouvées"</string>
+    <string name="sort_menu_title">Trier</string>
+    <string name="searching_info">Recherche d\'informations sur les crypto-monnaie, veuillez patienter</string>
+    <string name="coin_not_found">Crypto-monnaie introuvable</string>
+    <string name="coin_added">Crypto-monnaie ajoutée</string>
+    <string name="coin_already_added">Crypto-monnaie déjà ajoutée</string>
+    <string name="settings">Paramètres</string>
+    <string name="remove_coin">Retirer la crypto-monnaie</string>
+    <string name="coins_deleted">Crypto-monnaie supprimées</string>
+    <string name="coin_deleted">Crypto-monnaie supprimé</string>
+    <string name="supply">Alimentation en circulation</string>
+    <string name="cap">" Capitalisation boursière"</string>
+    <string name="choose_currency">"Choisir la devise "</string>
+    <string name="volume_24h">Volume 24h</string>
+    <string name="error">Erreur</string>
+    <string name="current_price">"Prix ​​actuel "</string>
+    <string name="trading_price">Trade price</string>
+    <string name="quantity">"Quantité "</string>
+    <string name="trade_date">"Date de transaction "</string>
+    <string name="total_value">"Valeur totale "</string>
+    <string name="confirm_transaction">Confirmer la transaction</string>
+    <string name="add_transaction">Ajouter une transaction</string>
+    <string name="add_trans_fill_all_fields">" Remplissez tous les champs"</string>
+    <string name="add_trans_fill_date">" Choisissez la date de la transaction"</string>
+    <string name="add_trans_fill_price">" Remplir le prix"</string>
+    <string name="add_trans_fill_quantity">" Remplir la quantité"</string>
+    <string name="all_time">"Tout le temps "</string>
+    <string name="profit">profit</string>
+    <string name="loss">perte</string>
+    <string name="transaction_added">"Transaction ajoutée "</string>
+    <string name="current">"Actuel "</string>
+    <string name="loss_b">Perte</string>
+    <string name="holdings_deleted">"Fonds supprimés "</string>
+    <string name="total_holdings">Total des fonds</string>
+    <string name="change_percent">"Changer le pourcentage "</string>
+    <string name="allocations">Allocations</string>
+    <string name="string_coins">Crypto-Monnaie</string>
+    <string name="enter_hashtag">"Entrez le hashtag "</string>
+    <string name="cancel">Annuler</string>
+    <string name="empty_text">"Aucune nouvelle trouvée "</string>
+    <string name="empty_coins">" Oups, il semble que vous n'avez pas de pièces de monnaie. Vous pouvez les ajouter par un signe plus ou dans les pièces supérieures"</string>
+    <string name="language">"La langue "</string>
+
+    <string-array name="histo_periods">
+        <item>1 hour</item>
+        <item>12 hours</item>
+        <item>24 hours</item>
+        <item>3 days</item>
+        <item>1 week</item>
+        <item>1 month</item>
+        <item>3 months</item>
+        <item>6 months</item>
+        <item>1 year</item>
+    </string-array>
+</resources>

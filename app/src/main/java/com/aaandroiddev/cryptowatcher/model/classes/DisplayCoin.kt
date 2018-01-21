@@ -1,0 +1,26 @@
+package com.aaandroiddev.cryptowatcher.model.classes
+
+data class DisplayCoin(
+        var from: String,
+        var to: String,
+        var imgUrl: String = "",
+        var fullName: String = "",
+        var selected: Boolean = false,
+        var FROMSYMBOL: String = "",
+        var TOSYMBOL: String = "",
+        var MARKET: String = "",
+        var PRICE: String = "",
+        var LASTUPDATE: String = "",
+        var LASTVOLUME: String = "",
+        var LASTVOLUMETO: String = "",
+        var LASTTRADEID: Double = 0.0,
+        var VOLUME24HOUR: String = "",
+        var VOLUME24HOURTO: String = "",
+        var OPEN24HOUR: String = "",
+        var HIGH24HOUR: String = "",
+        var LOW24HOUR: String = "",
+        var LASTMARKET: String = "",
+        var CHANGE24HOUR: String = "",
+        var CHANGEPCT24HOUR: String = "",
+        var SUPPLY: String = "",
+        var MKTCAP: String = "")

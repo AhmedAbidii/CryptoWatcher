@@ -1,0 +1,492 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "e2afce31740ec4f1a65b781cbe33407b",
+    "entities": [
+      {
+        "tableName": "coins",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`from_name` TEXT NOT NULL, `to_name` TEXT NOT NULL, `imgUrl` TEXT NOT NULL, `fullName` TEXT NOT NULL, `selected` INTEGER NOT NULL, `fromSymbol` TEXT NOT NULL, `toSymbol` TEXT NOT NULL, `market` TEXT NOT NULL, `price` TEXT NOT NULL, `priceRaw` REAL NOT NULL, `lastUpdate` TEXT NOT NULL, `lastUpdateRaw` REAL NOT NULL, `lastVolume` TEXT NOT NULL, `lastVolumeRaw` REAL NOT NULL, `lastVolumeTo` TEXT NOT NULL, `lastVolumeToRaw` REAL NOT NULL, `lastTradeId` REAL NOT NULL, `volume24h` TEXT NOT NULL, `volume24hRaw` REAL NOT NULL, `volume24hTo` TEXT NOT NULL, `volume24hToRaw` REAL NOT NULL, `open24h` TEXT NOT NULL, `open24hRaw` REAL NOT NULL, `high24h` TEXT NOT NULL, `high24hRaw` REAL NOT NULL, `low24h` TEXT NOT NULL, `low24hRaw` REAL NOT NULL, `lastMarket` TEXT NOT NULL, `change24h` TEXT NOT NULL, `change24hRaw` REAL NOT NULL, `changePct24h` TEXT NOT NULL, `changePct24hRaw` REAL NOT NULL, `supply` TEXT NOT NULL, `supplyRaw` REAL NOT NULL, `mktCap` TEXT NOT NULL, `mktCapRaw` REAL NOT NULL, `flags` TEXT NOT NULL, PRIMARY KEY(`from_name`, `to_name`))",
+        "fields": [
+          {
+            "fieldPath": "from",
+            "columnName": "from_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "to",
+            "columnName": "to_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imgUrl",
+            "columnName": "imgUrl",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fullName",
+            "columnName": "fullName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "selected",
+            "columnName": "selected",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fromSymbol",
+            "columnName": "fromSymbol",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "toSymbol",
+            "columnName": "toSymbol",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "market",
+            "columnName": "market",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "price",
+            "columnName": "price",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "priceRaw",
+            "columnName": "priceRaw",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastUpdate",
+            "columnName": "lastUpdate",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastUpdateRaw",
+            "columnName": "lastUpdateRaw",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastVolume",
+            "columnName": "lastVolume",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastVolumeRaw",
+            "columnName": "lastVolumeRaw",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastVolumeTo",
+            "columnName": "lastVolumeTo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastVolumeToRaw",
+            "columnName": "lastVolumeToRaw",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastTradeId",
+            "columnName": "lastTradeId",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "volume24h",
+            "columnName": "volume24h",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "volume24hRaw",
+            "columnName": "volume24hRaw",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "volume24hTo",
+            "columnName": "volume24hTo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "volume24hToRaw",
+            "columnName": "volume24hToRaw",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "open24h",
+            "columnName": "open24h",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "open24hRaw",
+            "columnName": "open24hRaw",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "high24h",
+            "columnName": "high24h",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "high24hRaw",
+            "columnName": "high24hRaw",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "low24h",
+            "columnName": "low24h",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "low24hRaw",
+            "columnName": "low24hRaw",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastMarket",
+            "columnName": "lastMarket",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "change24h",
+            "columnName": "change24h",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "change24hRaw",
+            "columnName": "change24hRaw",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "changePct24h",
+            "columnName": "changePct24h",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "changePct24hRaw",
+            "columnName": "changePct24hRaw",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "supply",
+            "columnName": "supply",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "supplyRaw",
+            "columnName": "supplyRaw",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mktCap",
+            "columnName": "mktCap",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mktCapRaw",
+            "columnName": "mktCapRaw",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "flags",
+            "columnName": "flags",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "from_name",
+            "to_name"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "all_coins",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`coinId` TEXT NOT NULL, `url` TEXT NOT NULL, `imageUrl` TEXT NOT NULL, `name` TEXT NOT NULL, `coinName` TEXT NOT NULL, `fullName` TEXT NOT NULL, `algorithm` TEXT NOT NULL, `proofType` TEXT NOT NULL, `fullyPremined` TEXT NOT NULL, `totalCoinSupply` TEXT NOT NULL, `preMinedValue` TEXT NOT NULL, `totalCoinsFreeFloat` TEXT NOT NULL, `sortOrder` TEXT NOT NULL, PRIMARY KEY(`coinId`))",
+        "fields": [
+          {
+            "fieldPath": "coinId",
+            "columnName": "coinId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "url",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageUrl",
+            "columnName": "imageUrl",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "coinName",
+            "columnName": "coinName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fullName",
+            "columnName": "fullName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "algorithm",
+            "columnName": "algorithm",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "proofType",
+            "columnName": "proofType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fullyPremined",
+            "columnName": "fullyPremined",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalCoinSupply",
+            "columnName": "totalCoinSupply",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "preMinedValue",
+            "columnName": "preMinedValue",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalCoinsFreeFloat",
+            "columnName": "totalCoinsFreeFloat",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sortOrder",
+            "columnName": "sortOrder",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "coinId"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "top_coins",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT, `name` TEXT NOT NULL, `symbol` TEXT, `rank` INTEGER, `price_usd` TEXT, `price_btc` TEXT, `vol24Usd` TEXT, `market_cap_usd` TEXT, `available_supply` TEXT, `total_supply` TEXT, `percent_change_1h` TEXT, `percent_change_24h` TEXT, `percent_change_7d` TEXT, `last_updated` TEXT, `imgUrl` TEXT, PRIMARY KEY(`name`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "symbol",
+            "columnName": "symbol",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rank",
+            "columnName": "rank",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "price_usd",
+            "columnName": "price_usd",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "price_btc",
+            "columnName": "price_btc",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "vol24Usd",
+            "columnName": "vol24Usd",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "market_cap_usd",
+            "columnName": "market_cap_usd",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "available_supply",
+            "columnName": "available_supply",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "total_supply",
+            "columnName": "total_supply",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "percent_change_1h",
+            "columnName": "percent_change_1h",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "percent_change_24h",
+            "columnName": "percent_change_24h",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "percent_change_7d",
+            "columnName": "percent_change_7d",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "last_updated",
+            "columnName": "last_updated",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "imgUrl",
+            "columnName": "imgUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "name"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "holdings",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`from_coin` TEXT NOT NULL, `to_currency` TEXT NOT NULL, `quantity` REAL NOT NULL, `price` REAL NOT NULL, `transaction_date` INTEGER NOT NULL, PRIMARY KEY(`from_coin`, `to_currency`, `transaction_date`))",
+        "fields": [
+          {
+            "fieldPath": "from",
+            "columnName": "from_coin",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "to",
+            "columnName": "to_currency",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "quantity",
+            "columnName": "quantity",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "price",
+            "columnName": "price",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "date",
+            "columnName": "transaction_date",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "from_coin",
+            "to_currency",
+            "transaction_date"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"e2afce31740ec4f1a65b781cbe33407b\")"
+    ]
+  }
+}
