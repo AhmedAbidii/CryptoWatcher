@@ -22,13 +22,13 @@ class TopCoinsAdapter @Inject constructor(private val coins: ArrayList<TopCoinDa
         RecyclerView.Adapter<TopCoinsAdapter.ViewHolder>() {
 
 
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent?.context).inflate(R.layout.top_coin_item, parent, false)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.top_coin_item, parent, false)
         return ViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: ViewHolder?, position: Int) {
-        holder?.bindItems(coins[position], clickListener)
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.bindItems(coins[position], clickListener)
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

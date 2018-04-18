@@ -19,8 +19,8 @@ class CoinsListAdapter(private val coins: ArrayList<Coin>,
                        private val holdingsHandler: HoldingsHandler,
                        val clickListener: (Coin) -> Unit) : RecyclerView.Adapter<CoinsListAdapter.ViewHolder>() {
 
-    override fun onBindViewHolder(holder: ViewHolder?, position: Int) {
-        holder?.bindItems(coins[position], clickListener)
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.bindItems(coins[position], clickListener)
     }
 
     private fun getChangeArrowDrawable(change: Float) = when {
@@ -34,8 +34,8 @@ class CoinsListAdapter(private val coins: ArrayList<Coin>,
     override fun getItemId(position: Int) = position.toLong()
 
     override fun getItemViewType(position: Int) = position
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int) =
-            ViewHolder(LayoutInflater.from(parent?.context).inflate(R.layout.coins_list_item, parent, false))
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
+            ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.coins_list_item, parent, false))
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bindItems(coin: Coin, listener: (Coin) -> Unit) = with(itemView) {
