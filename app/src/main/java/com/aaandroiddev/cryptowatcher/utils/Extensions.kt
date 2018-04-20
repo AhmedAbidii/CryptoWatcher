@@ -13,9 +13,9 @@ fun Context.toastLong(message: CharSequence) {
 }
 
 fun Context.logDebug(message: String) {
-    Log.d("CryptoMoon debug", message)
+    Log.d("debug", message)
 }
 
 fun Context.logError(message: String) {
-    Log.e("CryptoMoon error", message)
+    Log.e("error", message)
 }

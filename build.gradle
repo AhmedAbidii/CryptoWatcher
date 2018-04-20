@@ -5,7 +5,7 @@ buildscript {
             'kotlin': '1.2.31',
             'dagger': '2.15',
             'room': '1.0.0',
-            'constraintLayout': '1.0.2',
+            'constraintLayout': '1.1.0',
             'firebase': '15.0.0',
             'javapoet': '1.10.0',
             'junit': '4.12',
