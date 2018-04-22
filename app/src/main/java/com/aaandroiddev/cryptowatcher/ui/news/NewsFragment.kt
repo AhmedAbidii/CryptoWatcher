@@ -1,6 +1,7 @@
 package com.aaandroiddev.cryptowatcher.ui.news
 
 import android.content.Intent
+import android.os.BaseBundle
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
@@ -8,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.aaandroiddev.cryptowatcher.R
+import com.aaandroiddev.cryptowatcher.ui.base.BaseFragment
 import com.twitter.sdk.android.core.Callback
 import com.twitter.sdk.android.core.Result
 import com.twitter.sdk.android.core.TwitterException
@@ -17,7 +19,7 @@ import dagger.android.support.DaggerFragment
 import kotlinx.android.synthetic.main.fragment_news.*
 import javax.inject.Inject
 
-class NewsFragment : DaggerFragment(), INews.View {
+class NewsFragment : BaseFragment(), INews.View {
     @Inject lateinit var presenter: INews.Presenter
 
     private var tweets: ArrayList<Tweet> = ArrayList()

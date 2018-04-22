@@ -2,7 +2,7 @@ package com.aaandroiddev.cryptowatcher.ui.settings
 
 import android.os.Bundle
 import android.support.v7.widget.Toolbar
-import com.aaandroiddev.cryptowatcher.BaseActivity
+import com.aaandroiddev.cryptowatcher.ui.base.BaseActivity
 import com.aaandroiddev.cryptowatcher.R
 import com.aaandroiddev.cryptowatcher.utils.ResourceProvider
 import kotlinx.android.synthetic.main.activity_settings.*

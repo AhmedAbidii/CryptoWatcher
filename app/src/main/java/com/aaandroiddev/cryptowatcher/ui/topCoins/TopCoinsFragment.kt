@@ -14,13 +14,14 @@ import com.aaandroiddev.cryptowatcher.model.NAME
 import com.aaandroiddev.cryptowatcher.model.TO
 import com.aaandroiddev.cryptowatcher.model.USD
 import com.aaandroiddev.cryptowatcher.model.classes.TopCoinData
+import com.aaandroiddev.cryptowatcher.ui.base.BaseFragment
 import com.aaandroiddev.cryptowatcher.ui.coinInfo.CoinInfoActivity
 import com.aaandroiddev.cryptowatcher.utils.ResourceProvider
 import dagger.android.support.DaggerFragment
 import kotlinx.android.synthetic.main.fragment_top_coins.*
 import javax.inject.Inject
 
-class TopCoinsFragment : DaggerFragment(), ITopCoins.View {
+class TopCoinsFragment : BaseFragment(), ITopCoins.View {
 
     @Inject lateinit var presenter: ITopCoins.Presenter
     @Inject lateinit var resProvider: ResourceProvider

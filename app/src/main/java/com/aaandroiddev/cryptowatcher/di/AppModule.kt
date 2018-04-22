@@ -11,7 +11,7 @@ import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
 
-@Module
+@Module(subcomponents = [(ViewModelSubComponent::class)])
 class AppModule {
     @Provides
     @Singleton

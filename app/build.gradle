@@ -49,12 +49,13 @@ dependencies {
     implementation "com.android.support.constraint:constraint-layout:${versions.constraintLayout}"
     implementation "com.android.support:support-v4:${versions.supportLibrary}"
     implementation "com.google.firebase:firebase-crash:${versions.firebase}"
+
     testImplementation "junit:junit:${versions.junit}"
     androidTestImplementation "com.android.support.test:runner:${versions.runner}"
     androidTestImplementation "com.android.support.test.espresso:espresso-core:${versions.espressoCore}"
-    //Dagger
+    //ViewModelSubComponent
     kapt "com.squareup:javapoet:${versions.javapoet}"
-    //explicitly before Dagger to avoid exception noSuchMethodException
+    //explicitly before ViewModelSubComponent to avoid exception noSuchMethodException
     implementation "com.google.dagger:dagger:${versions.dagger}"
     implementation "com.google.dagger:dagger-android:${versions.dagger}"
     implementation "com.google.dagger:dagger-android-support:${versions.dagger}"
@@ -87,6 +88,9 @@ dependencies {
 
     debugImplementation "com.amitshekhar.android:debug-db:${versions.debugDb}"
 
+    implementation "android.arch.lifecycle:viewmodel:${versions.viewModel}"
+    // alternatively, just LiveData
+    implementation "android.arch.lifecycle:livedata:${versions.liveData}"
 }
 
 apply plugin: 'com.google.gms.google-services'

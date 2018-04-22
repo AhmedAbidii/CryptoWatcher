@@ -2,7 +2,6 @@ package com.aaandroiddev.cryptowatcher.ui.main
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import android.support.design.widget.TabLayout
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
@@ -16,10 +15,8 @@ import android.view.View
 import android.widget.ProgressBar
 import android.widget.RelativeLayout
 import android.widget.TextView
-import com.aaandroiddev.cryptowatcher.BaseActivity
+import com.aaandroiddev.cryptowatcher.ui.base.BaseActivity
 import com.aaandroiddev.cryptowatcher.R
-import com.aaandroiddev.cryptowatcher.model.CoinsController
-import com.aaandroiddev.cryptowatcher.model.classes.Coin
 import com.aaandroiddev.cryptowatcher.ui.addCoin.AddCoinActivity
 import com.aaandroiddev.cryptowatcher.ui.coins.CoinsFragment
 import com.aaandroiddev.cryptowatcher.ui.news.NewsFragment
@@ -27,7 +24,6 @@ import com.aaandroiddev.cryptowatcher.ui.settings.SettingsActivity
 import com.aaandroiddev.cryptowatcher.ui.topCoins.TopCoinsFragment
 import com.aaandroiddev.cryptowatcher.utils.ResourceProvider
 import com.aaandroiddev.cryptowatcher.utils.toastShort
-import dagger.android.support.DaggerAppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 

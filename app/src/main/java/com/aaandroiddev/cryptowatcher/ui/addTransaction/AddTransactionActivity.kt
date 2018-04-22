@@ -3,12 +3,11 @@ package com.aaandroiddev.cryptowatcher.ui.addTransaction
 import android.app.DatePickerDialog
 import android.os.Bundle
 import android.support.v7.widget.Toolbar
-import com.aaandroiddev.cryptowatcher.BaseActivity
+import com.aaandroiddev.cryptowatcher.ui.base.BaseActivity
 import com.aaandroiddev.cryptowatcher.R
 import com.aaandroiddev.cryptowatcher.utils.ResourceProvider
 import com.jakewharton.rxbinding2.view.clicks
 import com.jakewharton.rxbinding2.widget.textChanges
-import dagger.android.support.DaggerAppCompatActivity
 import kotlinx.android.synthetic.main.activity_add_transaction.*
 import java.util.*
 import javax.inject.Inject

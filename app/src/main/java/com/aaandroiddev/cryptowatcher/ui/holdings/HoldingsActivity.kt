@@ -5,12 +5,11 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.Toolbar
 import android.support.v7.widget.helper.ItemTouchHelper
-import com.aaandroiddev.cryptowatcher.BaseActivity
+import com.aaandroiddev.cryptowatcher.ui.base.BaseActivity
 import com.aaandroiddev.cryptowatcher.R
 import com.aaandroiddev.cryptowatcher.model.HoldingsHandler
 import com.aaandroiddev.cryptowatcher.model.classes.HoldingData
 import com.aaandroiddev.cryptowatcher.utils.ResourceProvider
-import dagger.android.support.DaggerAppCompatActivity
 import kotlinx.android.synthetic.main.activity_holdings.*
 import javax.inject.Inject
 

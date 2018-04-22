@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.v7.widget.Toolbar
 import android.view.View
 import com.aaandroiddev.cryptowatcher.R
+import com.aaandroiddev.cryptowatcher.ui.base.BaseActivity
 import com.aaandroiddev.cryptowatcher.utils.ResourceProvider
 import com.github.mikephil.charting.components.Description
 import com.github.mikephil.charting.data.PieData
@@ -12,7 +13,7 @@ import dagger.android.support.DaggerAppCompatActivity
 import kotlinx.android.synthetic.main.activity_coin_allocation.*
 import javax.inject.Inject
 
-class CoinAllocationActivity : DaggerAppCompatActivity(), ICoinAllocation.View {
+class CoinAllocationActivity : BaseActivity(), ICoinAllocation.View {
 
     @Inject lateinit var presenter: ICoinAllocation.Presenter
     @Inject lateinit var resProvider: ResourceProvider

@@ -2,9 +2,11 @@
 buildscript {
     ext.versions = [
             'supportLibrary': '27.1.1',
-            'kotlin': '1.2.31',
+            'kotlin': '1.2.40',
             'dagger': '2.15',
             'room': '1.0.0',
+            'viewModel': '1.1.1',
+            'liveData': '1.1.1',
             'constraintLayout': '1.1.0',
             'firebase': '15.0.0',
             'javapoet': '1.10.0',
@@ -38,7 +40,6 @@ buildscript {
         classpath 'com.android.tools.build:gradle:3.1.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
         classpath "org.jetbrains.kotlin:kotlin-android-extensions:${versions.kotlin}"
-        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files

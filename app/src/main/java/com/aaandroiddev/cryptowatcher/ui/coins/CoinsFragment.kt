@@ -15,6 +15,7 @@ import com.aaandroiddev.cryptowatcher.model.MultiSelector
 import com.aaandroiddev.cryptowatcher.model.NAME
 import com.aaandroiddev.cryptowatcher.model.TO
 import com.aaandroiddev.cryptowatcher.model.classes.Coin
+import com.aaandroiddev.cryptowatcher.ui.base.BaseFragment
 import com.aaandroiddev.cryptowatcher.ui.coinAllocation.CoinAllocationActivity
 import com.aaandroiddev.cryptowatcher.ui.coinInfo.CoinInfoActivity
 import com.aaandroiddev.cryptowatcher.ui.holdings.HoldingsActivity
@@ -24,7 +25,7 @@ import kotlinx.android.synthetic.main.fragment_coins.*
 import javax.inject.Inject
 
 
-class CoinsFragment : DaggerFragment(),ICoins.View {
+class CoinsFragment : BaseFragment(),ICoins.View {
 
     @Inject lateinit var presenter: ICoins.Presenter
     @Inject lateinit var resProvider: ResourceProvider

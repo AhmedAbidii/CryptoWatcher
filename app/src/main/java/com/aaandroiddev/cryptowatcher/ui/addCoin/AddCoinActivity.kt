@@ -7,7 +7,7 @@ import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.Toolbar
 import android.view.View
 import android.view.inputmethod.InputMethodManager
-import com.aaandroiddev.cryptowatcher.BaseActivity
+import com.aaandroiddev.cryptowatcher.ui.base.BaseActivity
 import com.aaandroiddev.cryptowatcher.R
 import com.aaandroiddev.cryptowatcher.model.classes.InfoCoin
 import com.aaandroiddev.cryptowatcher.utils.ResourceProvider
