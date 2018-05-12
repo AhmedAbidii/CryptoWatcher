@@ -10,6 +10,10 @@ import com.twitter.sdk.android.core.Twitter
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector
 import javax.inject.Inject
+import com.crashlytics.android.Crashlytics
+import io.fabric.sdk.android.Fabric
+
+
 
 class CryptoWatcherApp : Application(), HasActivityInjector {
 
@@ -17,7 +21,7 @@ class CryptoWatcherApp : Application(), HasActivityInjector {
 
     override fun onCreate() {
         super.onCreate()
-
+        Fabric.with(this, Crashlytics())
         DaggerAppComponent.builder()
                 .application(this)
                 .build()

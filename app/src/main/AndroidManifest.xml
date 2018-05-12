@@ -28,6 +28,9 @@
         <activity android:name=".ui.coinInfo.CoinInfoActivity" />
         <activity android:name=".ui.addTransaction.AddTransactionActivity" />
         <activity android:name=".ui.settings.SettingsActivity" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="f08b567a9cb3e37ae6305a333288b96d58a2022f" />
     </application>
 
 </manifest>

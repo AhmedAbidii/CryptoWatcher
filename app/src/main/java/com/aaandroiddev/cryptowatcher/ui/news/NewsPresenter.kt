@@ -1,7 +1,6 @@
 package com.aaandroiddev.cryptowatcher.ui.news
 
 import android.content.Context
-import android.support.v7.widget.LinearLayoutManager
 import com.aaandroiddev.cryptowatcher.model.Preferences
 import com.aaandroiddev.cryptowatcher.model.rxbus.RxBus
 import com.aaandroiddev.cryptowatcher.model.rxbus.SearchHashTagUpdated
@@ -68,7 +67,8 @@ class NewsPresenter @Inject constructor(private val view: INews.View,
         }
     }
 
-    private fun initTwitterSession() = TwitterCore.getInstance().sessionManager.activeSession ?: null
+    private fun initTwitterSession() = TwitterCore.getInstance().sessionManager.activeSession
+            ?: null
 
     private fun searchTweets() {
         view.hideEmptyNews()
@@ -137,11 +137,12 @@ class NewsPresenter @Inject constructor(private val view: INews.View,
         initTwitterAndSearchTweets()
     }
 
-    override fun onScrolled(dy: Int, linearLayoutManager: LinearLayoutManager) {
+
+    override fun onScrolled(dy: Int, childCount: Int, itemCount: Int, firstVisiblePosition: Int) {
         if (dy > 0) {
-            visibleItemCount = linearLayoutManager.childCount
-            totalItemCount = linearLayoutManager.itemCount
-            pastVisibleItems = linearLayoutManager.findFirstVisibleItemPosition()
+            visibleItemCount = childCount
+            totalItemCount = itemCount
+            pastVisibleItems = firstVisiblePosition
             if (loading && (visibleItemCount + pastVisibleItems) >= totalItemCount - 3) {
                 loading = false
                 lastId = tweets.last().id

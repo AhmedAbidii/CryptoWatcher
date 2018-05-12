@@ -1,7 +1,6 @@
 package com.aaandroiddev.cryptowatcher.ui.news
 
 import android.content.Intent
-import android.os.BaseBundle
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
@@ -15,7 +14,6 @@ import com.twitter.sdk.android.core.Result
 import com.twitter.sdk.android.core.TwitterException
 import com.twitter.sdk.android.core.TwitterSession
 import com.twitter.sdk.android.core.models.Tweet
-import dagger.android.support.DaggerFragment
 import kotlinx.android.synthetic.main.fragment_news.*
 import javax.inject.Inject
 
@@ -69,7 +67,8 @@ class NewsFragment : BaseFragment(), INews.View {
         recView.adapter = adapter
         recView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
             override fun onScrolled(recyclerView: RecyclerView?, dx: Int, dy: Int) {
-                presenter.onScrolled(dy, linearLayoutManager)
+                presenter.onScrolled(dy, linearLayoutManager.childCount,
+                        linearLayoutManager.itemCount, linearLayoutManager.findFirstVisibleItemPosition())
             }
         })
     }
@@ -92,7 +91,8 @@ class NewsFragment : BaseFragment(), INews.View {
     }
 
     override fun updateInsertedTweets(startPos: Int, count: Int) {
-        adapter.notifyItemRangeInserted(startPos, count)
+       // adapter.notifyItemRangeInserted(startPos, count)
+        adapter.notifyDataSetChanged()
     }
 
     override fun showLoading() {

@@ -21,29 +21,32 @@ buildscript {
             'rxandroid': '2.0.2',
             'rxkotlin': '2.1.0',
             'rxbindingAppcompatV7Kotlin': '2.0.0',
-            'rxbindingDesignKotlin': '2.0.0',
-            'javaxAnnotation': '10.0-b28',
-            'picasso': '2.5.2',
-            'MPAndroidChart': 'v3.0.3',
-            'AndroidSpinKit': '1.1.0',
-            'loggingInterceptor': '3.10.0',
-            'twitterCore': '3.1.1',
-            'twitterUi': '3.1.1',
-            'debugDb': '1.0.3'
+            'rxbindingDesignKotlin'     : '2.0.0',
+            'javaxAnnotation'           : '10.0-b28',
+            'picasso'                   : '2.5.2',
+            'MPAndroidChart'            : 'v3.0.3',
+            'AndroidSpinKit'            : '1.1.0',
+            'loggingInterceptor'        : '3.10.0',
+            'twitterCore'               : '3.1.1',
+            'twitterUi'                 : '3.1.1',
+            'debugDb'                   : '1.0.3',
+            'crashlytics'               : '2.9.2'
     ]
 
     repositories {
         google()
         jcenter()
+        maven { url 'https://maven.fabric.io/public' }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.1'
+        classpath 'com.android.tools.build:gradle:3.1.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
         classpath "org.jetbrains.kotlin:kotlin-android-extensions:${versions.kotlin}"
+        classpath 'io.fabric.tools:gradle:1.25.1'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
-        classpath 'com.google.gms:google-services:3.1.0'
+        classpath 'com.google.gms:google-services:3.2.1'
     }
 }
 
